@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>chrome user media</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"/>
+		<link rel="stylesheet" href="css/page.css" media="all"/>
+	</head>
+	<body>
+		<video id="camV" width="400" height="300" autoplay></video>
+		<canvas id="gifCanvas" width="400" height="300" class="hidden"></canvas>
+		<br>
+		<button id="button_start" onclick="start()">STREAM</button>
+		<button id="button_start" onclick="stop()">STOP</button>
+		<button id="button_start" onclick="capture()">CAPTURE</button>
+		<br>
+		<div id="result"></div>
+
+	<script src="js/v.js"></script>
+	<script src="js/anim15/jsgif/LZWEncoder.js"></script>
+	<script src="js/anim15/jsgif/NeuQuant.js"></script>
+	<script src="js/anim15/jsgif/GIFEncoder.js"></script>
+	<script src="js/anim15/jsgif/b64.js"></script>
+
+	</body>
+</html>
